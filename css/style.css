@@ -265,7 +265,6 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    /*align-items: center;*/
 }
 
 .course__about {
@@ -307,6 +306,7 @@ body {
 /* Footer */
 .footer {
     position: relative;
+    --padding-container: 160px 0 50px;
 }
 .footer::before {
     content: "";
@@ -319,3 +319,51 @@ body {
     clip-path: polygon(0 0, 100% 0, 50% 100%);
 }
 /* footer fin-nachon02 ~ agregue un clip path */
+
+/* footer gonzalo inicio */
+.footer__contact{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  place-items: center;
+  margin-bottom: 30px;
+}
+
+.footer__copy{
+  margin: 20px 0;
+  font-weight: 300;
+}
+
+.footer__social{
+  display: flex;
+  padding-top: 30px;
+  flex-wrap: wrap;
+}
+/* footer gonzalo fin */
+
+
+
+
+/* ============================================================================== */
+
+.footer__icon{
+  width: 30px;
+}
+
+.footer__picture{
+  margin: 0;
+}
+
+.footer__img{
+  width: 100%;
+}
+
+.footer__copyright{
+  padding-top: 30px;
+  border-top: 2px solid #918484;
+  text-align: center;
+}
+
+.footer__copyright::after{
+  content: " con la colaboracion de Axel, Daniela y Nacho.";
+}
