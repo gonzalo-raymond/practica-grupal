@@ -278,6 +278,37 @@ body{
   grid-column: 3/-1;
   grid-row: 1/-1;
 }
+.footer__social {
+  display: flex;
+  padding-top: 30px;
+  flex-wrap: wrap;
+}
+/* footer gonzalo fin */
+ /* Colaboración de Axel*/
+.footer__link {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ============================================================================== */
+
+.footer__icon{
+  width: 30px;
+}
+
+.footer__picture{
+  margin: 0;
+  grid-column: 3/-1;
+  grid-row: 1/-1;
+}
 
 .course__img{
   width: 100%;
