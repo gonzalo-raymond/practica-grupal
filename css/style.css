@@ -303,7 +303,7 @@ body {
 
 /* Colaboración Daniela final */
 
-/* Footer */
+/* footer inicio-nachon02*/
 .footer {
     position: relative;
     --padding-container: 160px 0 50px;
@@ -341,24 +341,6 @@ body {
 }
 /* footer gonzalo fin */
 
-
-
-
-/* ============================================================================== */
-
-.footer__icon{
-  width: 30px;
-}
-
-.footer__picture{
-  margin: 0;
-}
-.footer__social {
-  display: flex;
-  padding-top: 30px;
-  flex-wrap: wrap;
-}
-/* footer gonzalo fin */
  /* Colaboración de Axel*/
 .footer__link {
   width: 60px;
