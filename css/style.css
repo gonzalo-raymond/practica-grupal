@@ -284,3 +284,15 @@ body{
   height: 100%;
   object-fit: cover;
 }
+
+/* Colaboración Daniela inicio */
+
+.course__picture--right {
+  grid-column: 1/4;
+}
+
+.course__about--left {
+  grid-column: 3/-1;
+}
+
+/* Colaboración Daniela final */
