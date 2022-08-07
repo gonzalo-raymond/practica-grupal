@@ -41,7 +41,7 @@ body {
 
 .hero {
     height: 100vh;
-    min-width: 500px;
+    min-height: 500px;
     position: relative;
     --padding-container: 0;
 }
@@ -379,4 +379,97 @@ body {
 
 .footer__copyright::after{
   content: " con la colaboracion de Axel, Daniela y Nacho.";
+}
+
+@media screen and (max-width: 768px){
+    :root{
+        --height-shape: 14em;
+    }
+
+    .hero__container{
+        --padding-container: 60px 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+
+    .hero__img{
+        order: -1;
+        height: 45%;
+    }
+
+    .hero__title{
+        font-size: 3.8rem;
+    }
+
+    /* About */
+
+    .about{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 80px;
+    }
+
+    .about__course{
+        width: 100%;
+    }
+
+    .about__picture{
+        order: -1;
+    }
+
+    .about__img{
+        width: 100%;
+    }
+
+    /* Card */
+
+    .card__container {
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+            "card1      ."
+            "card1  card2"
+            "card3  card2"
+            "card3  card4"
+            ".      card4";
+    }
+
+    /* Course */
+
+    .course{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .course__about{
+        grid-column: 1/6;
+    }
+
+    .course__about--left{
+        grid-column: 2/-1;
+    }
+
+    .course__picture{
+        grid-column: 2/-1;
+    }
+
+    .course__picture--right{
+        grid-column: 1/6;
+    }
+
+    /* Footer */
+
+    .footer__contact{
+        grid-template-columns: 1fr;
+    }
+
+    .footer__texts{
+        order: 1;
+        --align-title: center;
+    }
+
+    .footer__social{
+        justify-content: space-evenly;
+    }
+
 }
